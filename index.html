@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Music Theory Quiz</title>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap"?>
+    </head>
+    
+    <body>
+    
+        <!--Start Quiz Button-->
+        <div class="start-btn"><button>Start Quiz</button></div>
+
+        <!--Instruction Box-->
+        <div class="instructions-box">
+            <div class="instructions-title"><span>Instructions...</span></div>
+            <div class="instruction-list">
+                <div class="instructions">1. You will have only have <span>15 seconds</span> per each question.</div>
+                <div class="instructions">2. When you answer a question incorrectly 3 seconds is subtracted from your timer.</div>
+                <div class="instructions">3. WHEN all questions are answered or the timer reaches 0
+                THEN the game is over</div>
+                <div class="instructions">4. HAVE FUN!</div>
+            </div>   
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>    
+        </div>
+
+        <!--Quiz Box-->
+        <div class="quiz-box">
+            <header>
+                <div class="title">Music Theory Quiz</div>
+                <div class="timer">
+                    <div class="time-text">Time Left</div>
+                    <div class="timer-sec ">15</div>
+                    <div class="time-line"></div>
+                </div>
+            </header>
+            
+            <section>
+                <div class="question-text">
+                    <!--Here I have inserted questions from Javascript-->
+                </div>
+                <div class="option-list">
+                    <div class="option">
+                        <!--Here I have inserted options from Javascript-->
+                    </div>
+                </div>
+            </section>
+            
+            <!--foot of Quiz Box-->
+            <footer>
+                <div class="total-score">
+                    <!--Here I've inserted Question Count Number from Javascript-->
+                </div>
+                <button class="next-button">Next Question</button>
+            </footer>
+        </div>
+
+
+        <!--Result Box-->
+        <section class="result-box">
+            <div class="icon">
+                <i class="fas fa-crown"></i>
+            </div>
+            <div class="complete-text">You've completed the Quiz!</div>
+            <div class="quiz-score">
+                <!--Here I've inserted the score result from Javascript-->
+            </div>
+            <div class="buttons">
+                <button class="quit">Exit Quiz</button>
+                <button class="restart">Continue</button>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+        <script src="js/questions.js"></script>
+    </body>
+</html>
